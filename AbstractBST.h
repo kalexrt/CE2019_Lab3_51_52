@@ -1,6 +1,5 @@
-#include<iostream>
-#ifndef AbstractBST_h
-#define AbstractBST.h
+#include <iostream>
+#pragma once
 
 class AbstractBST
 {
@@ -13,4 +12,3 @@ class AbstractBST
     virtual void inorder() = 0;
 };
 
-#endif
