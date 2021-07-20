@@ -41,15 +41,19 @@ void LinkedlistBST :: addBST(int value)
     }
 }
 
-void inorder(struct node *root) {
-  if (root != NULL) {
+void LinkedlistBST :: order(node *node) {
+  if (node != NULL) {
     
-    inorder(root->left);
+    order(node->left);
 
-    cout << root->key << " -> ";
+    cout << node->key << " -> ";
     
-    inorder(root->right);
+    order(node->right);
   }
+}
+
+void LinkedlistBST :: inorder(){
+    order(root);
 }
 
 bool LinkedlistBST :: searchBST(int targetkey){
