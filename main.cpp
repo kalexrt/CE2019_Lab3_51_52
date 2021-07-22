@@ -1,5 +1,6 @@
 #include <iostream>
 #include "ArrayBST.h"
+#include "LinkedlistBST.h"
 using namespace std;
 int main()
 {
